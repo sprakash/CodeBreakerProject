@@ -35,10 +35,10 @@ function setHiddenFields() {
 
 	let temp = '';
 	while(ans.length < 4) {
-		temp =  "0" + answer.toString();
+		temp =  "0" + ans.toString();
 	}
 
-	answer.value = temp;
+	answer.value = parseInt(temp);
 	attempt = 0;
 }
 
