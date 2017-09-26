@@ -38,7 +38,7 @@ function setHiddenFields() {
 		temp =  "0" + ans.toString();
 	}
 
-	answer.value = parseInt(temp);
+	answer.value = temp;
 	attempt = 0;
 }
 
