@@ -5,7 +5,7 @@ function guess() {
     let input = document.getElementById('user-guess');
     //add functionality to guess function here
 
-    if(answer.empty() || attempt.empty()) {
+    if(answer.length == 0 || attempt.length == 0) {
     	setHiddenFields();
     }
 
@@ -31,14 +31,14 @@ function guess() {
 //implement new functions here
 
 function setHiddenFields() {
-	answer = Math.floor((Math.random() * 9999) + 0);
+	let ans = Math.floor((Math.random() * 9999) + 0);
 
 	let temp = '';
-	while(answer.length < 4) {
+	while(ans.length < 4) {
 		temp =  "0" + answer.toString();
 	}
 
-	answer = Integer.parseInt(temp); 
+	answer.value = temp;
 	attempt = 0;
 }
 
